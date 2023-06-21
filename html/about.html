@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-aboute</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/aboute.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/gallery-jewerly.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" id="logo">Pectoral</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="/html/about.html">Головна</a>
+          </li>
+          <li>
+            <a href="/html/product-shop.html">Магазин</a>
+          </li>
+          <li>
+            <div class="cart-icon">
+              <i class="fas fa-cart-arrow-down fa-2x"></i>
+              <div class="whole-cart-window hide">
+                <h2>Ваш кошик</h2>
+                <div class="cart-wrapper">
+                  <div class="cart-item">
+                    <img src="../src/Пектораль.jpg"> 
+                    <div class="details">
+                        <h3>Beige Short Skirt</h3>
+                        <p>Bottomwear
+                         <span class="quantity">Кількість: 1</span>
+                            <span class="price">Вартість: $49</span>
+                        </p>
+                    </div>
+                    <div class="cancel"><i class="fas fa-window-close"></i></div>
+                 </div>
+                </div>
+                <div class="subtotal">Кінцева сумма: $0.00</div>
+                <div class="checkout"><a class="order" href="../html/orderform.html">Оплатити</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <section class="main-about">
+        <img src="../src/tradition_jewerly.jpg" class="aboute-picture">
+        <div class="about-text">
+            <H1>Пектораль</H1>
+            <span>В минулому нашийні прикраси жінки були ознакою заможності сім'ї. Було багато різних прикрас та вони були не дешевими. Вважалось що якщо щось станеться з домо то продавши нашийні прикраси жінки можна було купити нову хату. Ми віримо щов сучасному світі все ще є місце для наших традиційних прикрас. </span>
+          </section>
+        </div>
+        <div class="button-shop">
+            <button class="button-value"><a href="/html/product-shop.html" class="to-shop">До магазину</a></button>
+        </div>
+      </section>
+        <section class="jewerly">
+          <div class="about-jewerly">
+            <h2>Трохи більше про прикраси</h2>
+            <p>
+              Різноманітність традиційних прикрас може здивувати кожного.Коралове намисто було одним із найпоширеніших на всій території України.З коралями як із символом багатства була пов’язана прикмета: «Вкупі гроші держаться, як намисто на шиї висить, а продати — то й гроші розійдуться».Прикраси з перлів були привілеєм найзаможніших панянок: шляхтянок, дружин і дочок козацької старшини. Таке намисто дорого коштувало, тому що мушлі привозили із заморських країв.Ще один привілей вищого суспільного класу — скляне намисто або, як казали на заході України, «писані пацьорки». Розписані вручну намистини з Венеції були мрією кожної дівчини. 
+            </p>
+
+          </div>
+          <div class="container">
+            <div class="image-container">
+                <img src="../src/jewerly/picture1.jpg" class="image-gallery active" id="content1" >
+                <img src="../src/jewerly/picture2.jpg" class="image-gallery" id="content2">
+                <img src="../src/jewerly/picture3.jpg" class="image-gallery" id="content3">
+                <img src="../src/jewerly/picture5.jpg" class="image-gallery" id="content4">
+                <img src="../src/jewerly/picture6.jpg" class="image-gallery" id="content5">
+            </div>
+            <div class="dot-container">
+                <button onclick = "dot(1)"></button>
+                <button onclick = "dot(2)"></button>
+                <button onclick = "dot(3)"></button>
+                <button onclick = "dot(4)"></button>
+                <button onclick = "dot(5)"></button>
+            </div>
+            <button id="prev" onclick="prev()"> &lt; </button>
+            <button id="next" onclick="next()"> &gt; </button>
+        </div>
+        </section>
+    </section>
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3 class="footer-h3">Perctoral</h3>
+          <p class="footer-p">
+            Данний інтернет магазин був розпоблений для продажу традиційних ювелірних прекрас з бісеру. Будь ласка, вивчайте наші традиції з гордістю.
+          </p>
+        </div>
+        <div class="column links">
+          <h3 class="footer-h3">Інші посилання</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li class="footer-li">
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li class="footer-li">
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li class="footer-li">
+              <a href="#support">Support</a>
+            </li>
+            <li class="footer-li">
+              <a href="#careers">Careers</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3 class="footer-h3">Subscribe</h3>
+          <div>
+            <input type="email" placeholder="Your email id here" />
+            <button class="footer-btn">Subscribe</button>
+          </div>
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row secondary">
+        <div>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+          </p>
+          <p><a class="footer-tel" href="tel: +38096*******">+38096*******</a></p>
+        </div>
+        <div>
+          <p><i class="fas fa-envelope"></i></p>
+          <p><a class="mail" href="mailto:mail@domain.com">mail@domain.com</a></p>
+        </div>
+        <div>
+          <p><i class="fas fa-map-marker-alt"></i></p>
+          <p>1234 Pearl Street</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Script -->
+    <script src="../javascript/navigation.js"></script>
+    <script src="../javascript/cart.js"></script>
+    <script src="../javascript/gallery-jewerly.js"></script>
+  </body>
+</html>

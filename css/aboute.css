@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #f5f8ff;
+    font-family: "Poppins", sans-serif;
+  }
+  .main-about{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 5em;
+  }
+  img{
+    width: 30em;
+    height: 40em;
+  }
+  .about-text{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  H1{
+    padding: 1em;
+  }
+  .button-value {
+    border: 2px solid #6759ff;
+    padding: 1.5em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+    font-size: medium;
+  }
+  .to-shop{
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+  .button-value:hover{
+    background-color: #f8f6db;
+    color: #6759ff;
+  }
+  .jewerly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .about-jewerly{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    max-width: 60%;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  @media only screen and (max-width: 991px){
+    .about-text{
+        font-size: initial;
+    }
+    H1{
+        padding: 0.5em;
+    }
+  }
+  @media only screen and (max-width: 767px){
+    .about-text{
+        font-size: small;
+    }
+    H1{
+        padding: 0.5em;
+    }
+  }
+  @media only screen and (max-width: 575px){
+    .about-text{
+        font-size: small;
+    }
+    H1{
+        padding: 0.25em;
+    }
+  }

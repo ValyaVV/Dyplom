@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order form</title>
+    <link rel="stylesheet" href="../css/orderform.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="order-form" id="order-form">
+            <h2>Заповніть форму замовлення</h2>
+            <form class="form" >
+                <input placeholder="Ім'я" name="name" type="text">
+                <br>
+                <input placeholder="Фамілія" name="secondname" type="text">
+                <br>
+                <input placeholder="Номер телефону" name="phone" type="tel">
+                <br>
+                <input placeholder="Email" name="email" type="email">
+                <br>
+                <input placeholder="Населений пункт" name="place" type="text">
+                <br>
+                <select class="select">
+                    <option>Нова пошта</option>
+                    <option>УкрПошта</option>
+                </select>
+            </form>
+            <button class="order-btn" onclick="openPopup()">Відправити</button>
+        </div>
+        <div class="bg-popup" id="bg-popup">
+            <div class="popup" id="popup">
+                <img src="../src/tick.png">
+                <h2>Дякуємо за замовлення!</h2>
+                <p>З вами зв'яжуться для підтвердження замовлення!</p>
+                <button type="button" class="popup-btn" onclick="closePopup()"> <a class="back" href="../html/product-shop.html">Ok</a></button>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        let bgpopup = document.getElementById("bg-popup");
+        let popup = document.getElementById("popup");
+        let order = document.getElementById("order-form");
+        
+
+        function openPopup(){
+            bgpopup.classList.add("open");
+            popup.classList.add("open-popup");
+            order.classList.add("after-popup")
+        }
+        function closePopup(){
+            bgpopup.classList.remove("open");
+            popup.classList.remove("open-popup");
+            order.classList.remove("after-popup")
+        }
+    </script>
+</body>
+</html>

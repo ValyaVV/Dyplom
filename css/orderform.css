@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    min-width: 100hv;
+    background-color: #f5f8ff;
+    font-family: "Poppins", sans-serif;
+  }
+  .container,
+  .order-form{
+    display: grid;
+    justify-content: center;
+    visibility: visible;
+  }
+  .after-popup{
+    visibility: hidden;
+  }
+  h2{
+    align-items: center;
+    margin-bottom: 15px
+  }
+  .container{
+    background-color: #ffffff;
+    max-width: 25em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  input,
+  .select {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0, 0.05);
+  }
+  .order-btn{
+    border: 2px solid #6759ff;
+    padding: 1.5em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #6759ff;
+    cursor: pointer;
+    font-size: medium;
+  }
+  .order-btn:hover{
+    background-color: #f8f6db;
+    color: #6759ff;
+  }
+  
+  .bg-popup{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .open{
+    visibility: visible;
+  }
+  .popup{
+    width: 400px;
+    background: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0, 30px, 30px;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+  }
+  .open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+  }
+  .popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px;
+  }
+  .popup-btn{
+    width: 20%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+  }
+  .back{
+    color: #ffffff;
+    text-decoration: none;
+  }
