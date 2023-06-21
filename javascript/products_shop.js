@@ -3,55 +3,97 @@ let products = {
       {
         id: '1',
         productName: "Ґердан з білого бісеру",
+        productDetile:"Дукач на червоній стрічці",
         category: "Ґердан",
-        price: "30",
+        price: "23",
         img: "../src/Ґердан-білий.jpg",
       },
       {
         id: '2',
         productName: "Червона селянка",
-        category: "Селянка",
-        price: "49",
+        productDetile:"Дукач на червоній стрічці",
+        category: "Силянка",
+        price: "33",
         img: "../src/Пектораль.jpg",
       },
       {
         id: '3',
         productName: "Ґердан білий з квітами",
+        productDetile:"Дукач на червоній стрічці",
         category: "Ґердан",
-        price: "99",
+        price: "23",
         img: "../src/Ґердан-білий-квіти.jpg",
       },
       {
         id: '4',
         productName: "Дукач",
+        productDetile:"Дукач на червоній стрічці",
         category: "Дукач",
-        price: "29",
+        price: "14",
         img: "../src/Пектораль.jpg",
       },
       {
         id: '5',
-        productName: "Чорна селянка",
+        productName: "Чорна силянка",
+        productDetile:"Дукач на червоній стрічці",
         category: "Селянка",
-        price: "129",
+        price: "33",
         img: "../src/Пектораль.jpg",
       },
       {
         id: '6',
         productName: "Коралі",
         category: "Коралі",
-        price: "89",
+        productDetile:"Дукач на червоній стрічці",
+        price: "24",
         img: "../src/Пектораль.jpg",
       },
       {
         id: '7',
         productName: "Дукач",
+        productDetile:"Дукач на червоній стрічці",
         category: "Дукач",
-        price: "189",
+        price: "14",
         img: "../src/Пектораль.jpg",
       },
     ],
   };
   
+  for (let i of products.data) {
+    //Create Card
+    let card = document.createElement("div");
+    //Card should have category and should stay hidden initially
+    card.setAttribute('data-id',i.id)
+    card.classList.add("card", i.category, "hide");
+    //img tag
+    let image = document.createElement("img");
+    image.classList.add("img")
+    image.setAttribute("src", i.img);
+    card.appendChild(image);
+    //container
+    let container = document.createElement("p");
+    container.classList.add("container");
+    //product name
+    let name = document.createElement("h3");
+    name.classList.add("product-name");
+    name.innerText = i.productName.toUpperCase();
+    container.appendChild(name);
+    let detile = document.createElement("span");
+    detile.classList.add("product-detile");
+    detile.innerText = i.productDetile.toUpperCase();
+    container.appendChild(detile);
+    //price
+    let price = document.createElement("span");
+    price.classList.add("price")
+    price.innerText = "Price: $" + i.price;
+    container.appendChild(price);
+    let add_btn = document.createElement("span");
+    add_btn.classList.add("button_add");
+    add_btn.innerText = "Додати в кошик";
+    container.appendChild(add_btn);
+    card.appendChild(container);
+    document.getElementById("products").appendChild(card);
+  }
   
   //parameter passed from button (Parameter same as category)
   function filterProduct(value) {

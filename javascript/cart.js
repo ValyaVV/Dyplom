@@ -62,11 +62,11 @@ addToCartBtns.forEach( (btn)=>{
 }  )
 
 function addItemFunction(e){
-    const id = e.target.parentElement.parentElement.parentElement.getAttribute("data-id")
-    const img = e.target.parentElement.parentElement.previousElementSibling.src
-    const name = e.target.parentElement.previousElementSibling.textContent
-    const desc = e.target.parentElement.children[0].textContent
-    let price = e.target.parentElement.children[1].textContent
+    const id = e.target.parentNode.parentNode.getAttribute("data-id")
+    const img = e.target.parentNode.parentNode.querySelector("img").src
+    const name = e.target.parentElement.children[0].textContent
+    const desc = e.target.parentElement.children[1].textContent
+    let price = e.target.parentElement.children[2].textContent
     price = price.replace("Price: $", '')
     const item = new CartItem(name, desc, img, price)
     LocalCart.addItemToLocalCart(id, item)
